@@ -5,3 +5,109 @@
     box-sizing: border-box;
     font-family: 'Nerko One', cursive;
 }
+
+body{
+    background-color: #add8e6;
+}
+
+/* Utilities */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Header */
+header .title{
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-bottom: 70px;
+}
+
+
+/* Main content */
+.cards-wrapper{
+    max-width: 1080px;
+    height: 1000px;
+    background-color: bisque;
+    margin: 0 auto;
+}
+
+.cards-wrapper .cards{
+    width: calc(25% - 30px);
+    margin: 20px 15px;
+    height: 275px;
+    background-color: white;
+    float: left;
+    border-radius: 10px;
+    position: relative;
+}
+
+.cards.inactive{
+    background-image: url(../img/pattern.png);
+    background-size: contain;
+}
+
+/* .cards.active{
+    display: none;
+} */
+
+.cards-name.undisplayed{
+    opacity: 0;
+}
+
+.cards-wrapper .cards.inactive:hover,
+.cards.inactive:hover .undisplayed,
+.cards.baloon{
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: 85%;
+    opacity: 1;
+    color: #e67919;
+}
+
+.cards-wrapper .cards.baloon{
+    background-image: url(../img/noun_air_balloon_3134741.png);
+}
+
+.cards .cards-name{
+    position: absolute;
+    bottom: 20px;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+.cards.baloon .cards-name{
+    color: #e61986;
+}
+
+.cards-wrapper .cards.A:hover{
+    background-image: url(../img/noun_air_balloon_3134741.png);
+}
+
+.cards-wrapper .cards.B:hover{
+    background-image: url(../img/noun_Bicycle_3134821.png);
+}
+
+.cards-wrapper .cards.C:hover{
+    background-image: url(../img/noun_Cruise_Ship_3134824.png);
+}
+
+.cards-wrapper .cards:nth-child(4):hover{
+    background-image: url(../img/noun_Tractor_3134797.png);
+}
+
+.cards-wrapper .cards.T:hover{
+    background-image: url(../img/noun_Submarine_3134738.png);
+}
+
+.cards-wrapper .cards.S:hover{
+    background-image: url(../img/noun_Submarine_3134738.png);
+}
+
+.cards-wrapper .cards.Tr:hover{
+    background-image: url(../img/noun_Tram_3134750.png);
+}
